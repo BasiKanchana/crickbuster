@@ -475,6 +475,7 @@ td {
   font-weight: 800px !important;
   color: white !important;
   background-color: #742cdf !important;
+  border-radius: 0px !important;
 }
 .inquiry-profiles {
   width: 30px;
@@ -583,6 +584,7 @@ td {
   width: 170px !important;
   padding: 3px !important;
   font-size: 14px;
+  border-radius: 0px !important;
 }
 /* Start Trournament table */
 /* To display the block as level element */
@@ -989,6 +991,7 @@ thead th {
   color: #b3b8bd;
   margin: -2px;
   font-size: 14px;
+  border-radius: 0px !important;
 
   /* width: 150px; */
 }
@@ -2046,6 +2049,7 @@ tbody td img {
   height: 35px;
   padding: 3px !important;
   font-size: 14px;
+  border-radius: 0px !important;
 }
 
 /* Add  transport */
