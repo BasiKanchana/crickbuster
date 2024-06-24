@@ -633,6 +633,7 @@ table.table-data-scrollbar .tournament-table-body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+ 
 }
 /* Hide the browser's default checkbox */
 .checkbox-container input {
@@ -651,6 +652,7 @@ table.table-data-scrollbar .tournament-table-body {
   height: 20px;
   width: 20px;
   background-color: #eee;
+  border: 1px solid #000000b7;
 }
 
 /* On mouse-over, add a grey background color */
