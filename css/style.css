@@ -1005,8 +1005,8 @@ thead th {
   font-weight: 500;
 }
 .court-yard-text {
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 15px !important;
+  font-weight: 700 !important;
 }
 
 .hotel-rating-column {
