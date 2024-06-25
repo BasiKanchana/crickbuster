@@ -32,40 +32,40 @@
                 <h2>CRICKBUSTER</h2>
             </div>
             <ul class="sidebar-nav">
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Dashboard">
                     <a href="index.html"><i class="fa-brands fa-slack"></i>Dashboard</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Packages">
                     <a href="packages.html"><i class="fa-solid fa-bag-shopping"></i>Packages</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Tournaments">
                     <a href="tournaments.html"><i class="fa-solid fa-trophy"></i>Tournaments</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Stadiums">
                     <a href="stadium.html"><i class="fa fa-user"></i>Stadiums</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Teams">
                     <a href="teams.html"><i class="fa fa-user"></i>Teams</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Hotels">
                     <a href="hotels.html"><i class="fa-solid fa-hotel"></i>Hotels</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Flights">
                     <a href="flights.html"><i class="fa-solid fa-plane-departure"></i>Flights</a>
                 </li>
-                <li class="active">
+                <li class="active" data-toggle="tooltip" data-placement="right" title="Attractions">
                     <a href="attractions.html"><i class="fa fa-user"></i>Attractions</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Intra/Intercity">
                     <a href="intercity.html"><i class="fa-solid fa-bus"></i>Intra/Intercity</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Crickbuster Tours">
                     <a href="cricbuster-tour.html"><i class="fa fa-user"></i>Crickbuster Tours</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Landing Page">
                     <a href="landing-page.html"><i class="fa-solid fa-pager"></i>Landing Page</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Manage Content">
                     <a href="manage-content.html"><i class="fa-solid fa-gears"></i>Manage Content</a>
                 </li>
                 <!-- <div class='dashboard-nav-dropdown'>
@@ -128,29 +128,60 @@
                 </div>
             </div>
             <div class="content-container">
-                <p class="content-heading">Add Attractions</p>
-                <div class="content-body">
-                    <form>
+                <form action="">
+                    <p class="content-heading">Add Attractions</p>
+                    <div class="content-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="attraction" class="add-label">Attraction</label>
-                                    <input type="text" class="add-input" id="attraction" name="attraction"
-                                        placeholder="Stonehenge">
+                                    <div class="error-message" style="width: 300px;">
+                                        <input type="text" class="add-input" id="attraction" name="attraction"
+                                            placeholder="Stonehenge">
+                                        <span class="error">Attraction name is required</span>
+                                    </div>
                                 </div>
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
+                                    <label for="country" class="add-label">Country</label>
+                                    <div class="error-message" style="width: 300px;">
+                                        <select class="add-input">
+                                            <option selected>Select Country </option>
+                                            <option value="austrelia">Austrelia </option>
+                                            <option value="singapur">Singapur</option>
+                                            <option value="india">India</option>
+                                        </select>
+                                        <span class="error">Please select a country</span>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="country" class="add-label">City</label>
+                                    <div class="error-message" style="width: 300px;">
+                                        <select class="add-input">
+                                            <option selected>Select City </option>
+                                            <option value="austrelia">Canberra </option>
+                                            <option value="singapur">Jurong</option>
+                                            <option value="india">Banglore</option>
+                                            <option value="india">Kathmandu</option>
+                                        </select>
+                                        <span class="error">Please select a city</span>
+                                    </div>
+                                </div>
+                                <!-- <div class="row align-items-center mb-4">
                                     <label for="location" class="add-label">Location</label>
                                     <input type="text" class="add-input" id="location" name="location"
                                         placeholder="INDIA">
-                                </div>
+                                </div> -->
                                 <div class="row mb-4">
                                     <label for="description" class="add-label">Description</label>
-                                    <textarea id="description" name="description"
-                                        placeholder="Near Airport, Hospital ABC 24/7" class="add-input"></textarea>
+                                    <div class="error-message" style="width: 300px;">
+                                        <textarea id="description" name="description"
+                                            placeholder="Near Airport, Hospital ABC 24/7" class="add-input"></textarea>
+                                        <span class="error">Type description min 20 to max 50</span>
+                                    </div>
                                 </div>
                                 <div class="row mb-4">
                                     <label for="image" class="add-label">Image</label>
-                                    <div class="p-0" style="width: 300px;">
+                                    <div class="p-0 error-message" style="width: 300px;">
                                         <div class="teams-file-upload">
                                             <label for="image" class="teams-file-upload-input">Thumbnail</label>
                                             <input type="file" id="image" name="image" class="teams-file-upload-input">
@@ -160,12 +191,16 @@
                                         <div class="teams-file-info">Images (500Kb) <span
                                                 class="remove-file">&#x2716;</span>
                                         </div>
+                                        <span class="error">Upload required images</span>
                                     </div>
                                 </div>
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="hotel-email" class="add-label">Email</label>
-                                    <input type="email" class="add-input" id="hotel-email" name="hotel-email"
-                                        placeholder="Contact@courtyard.in">
+                                    <div class="error-message" style="width: 300px;">
+                                        <input type="email" class="add-input" id="hotel-email" name="hotel-email"
+                                            placeholder="Contact@courtyard.in">
+                                        <span class="error">Email is required</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -174,13 +209,13 @@
                                     <input class="add-input" type="text" id="timing" placeholder="10.00AM- 06.00PM"
                                         onfocus="(this.type='time')" onblur="(this.type='text')">
                                 </div>
-                                <div class="row mb-4">
+                                <!-- <div class="row mb-4">
                                     <label class="add-label" for="contracted">Contracted</label>
                                     <div class="form-check form-switch" style="width: 50px;">
                                         <input class="form-check-input" type="checkbox" role="switch" id="contracted"
                                             checked>
                                     </div>
-                                </div>
+                                </div> -->
                                 <table class="add-attractions-table mb-4">
                                     <thead>
                                         <tr>
@@ -188,10 +223,6 @@
                                                     class="add-attractions-label">Price Details</label></td>
                                             <td style="width: 21%;"><label for="price"
                                                     class="add-attractions-label">Price</label></td>
-                                            <td style="width: 21%;"><label for="contracted-price"
-                                                    class="add-attractions-label">Contracted Price</label>
-                                            </td>
-                                            <td></td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -204,10 +235,10 @@
                                                 <input type="text" class="add-attractions-input" id="price" name="price"
                                                     placeholder="$200">
                                             </td>
-                                            <td>
+                                            <!-- <td>
                                                 <input type="text" class="add-attractions-input" id="contracted-price"
                                                     name="contracted-price" placeholder="$200">
-                                            </td>
+                                            </td> -->
                                             <td>
                                                 <a href="" class="mx-2" style="color: #5C5E62;"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
@@ -224,10 +255,10 @@
                                                 <input type="text" class="add-attractions-input" id="price" name="price"
                                                     placeholder="$200">
                                             </td>
-                                            <td>
+                                            <!-- <td>
                                                 <input type="text" class="add-attractions-input" id="contracted-price"
                                                     name="contracted-price" placeholder="$200">
-                                            </td>
+                                            </td> -->
                                             <td>
                                                 <a href="" class="mx-2" style="color: #5C5E62;"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
@@ -244,14 +275,14 @@
                                             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                             class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
                                 </div>
-                                <div class="row mb-4">
+                                <!-- <div class="row mb-4">
                                     <label class="add-label" for="time-slot">Different Time Slot</label>
                                     <div class="form-check form-switch" style="width: 50px;">
                                         <input class="form-check-input" type="checkbox" role="switch" id="time-slot"
                                             checked>
                                     </div>
-                                </div>
-                                <div class=" mb-4">
+                                </div> -->
+                                <!-- <div class=" mb-4">
                                     <label for="time" class="add-label mb-2 w-100">Time</label>
                                     <div class="mb-2">
                                         <input class="add-input" type="text" id="time" placeholder="9 AM- 11AM"
@@ -270,15 +301,15 @@
                                                 class="fa-solid fa-trash"></i></a>
                                                 <a href="" class="btn add-hotel-table-btn">Add</a>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div style="float: right;" class="mt-2">
-                    <a href="#" class="btn cancel-btn">CANCEL</a>
-                    <a href="#" class="btn save-btn">SAVE</a>
-                </div>
+                    </div>
+                    <div style="float: right;" class="mt-2">
+                        <a href="#" class="btn cancel-btn">CANCEL</a>
+                        <a href="#" class="btn save-btn">SAVE</a>
+                    </div>
+                </form>
             </div>
         </section>
         <!-- End Content -->

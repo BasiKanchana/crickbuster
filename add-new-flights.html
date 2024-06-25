@@ -32,40 +32,40 @@
                 <h2>CRICKBUSTER</h2>
             </div>
             <ul class="sidebar-nav">
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Dashboard">
                     <a href="index.html"><i class="fa-brands fa-slack"></i>Dashboard</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Packages">
                     <a href="packages.html"><i class="fa-solid fa-bag-shopping"></i>Packages</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Tournaments">
                     <a href="tournaments.html"><i class="fa-solid fa-trophy"></i>Tournaments</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Stadiums">
                     <a href="stadium.html"><i class="fa fa-user"></i>Stadiums</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Teams">
                     <a href="teams.html"><i class="fa fa-user"></i>Teams</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Hotels">
                     <a href="hotels.html"><i class="fa-solid fa-hotel"></i>Hotels</a>
                 </li>
-                <li class="active">
+                <li class="active" data-toggle="tooltip" data-placement="right" title="Flights">
                     <a href="flights.html"><i class="fa-solid fa-plane-departure"></i>Flights</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Attractions">
                     <a href="attractions.html"><i class="fa fa-user"></i>Attractions</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Intra/Intercity">
                     <a href="intercity.html"><i class="fa-solid fa-bus"></i>Intra/Intercity</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Crickbuster Tours">
                     <a href="cricbuster-tour.html"><i class="fa fa-user"></i>Crickbuster Tours</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Landing Page">
                     <a href="landing-page.html"><i class="fa-solid fa-pager"></i>Landing Page</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Manage Content">
                     <a href="manage-content.html"><i class="fa-solid fa-gears"></i>Manage Content</a>
                 </li>
                 <!-- <div class='dashboard-nav-dropdown'>
@@ -128,19 +128,22 @@
                 </div>
             </div>
             <div class="content-container">
-                <p class="content-heading">Edit Flight</p>
-                <div class="content-body">
-                    <form>
+                <form action="">
+                    <p class="content-heading">Edit Flight</p>
+                    <div class="content-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="row align-items-center mb-4">
+                                <div class="row  mb-4">
                                     <label for="airline-name" class="add-label">Airline name</label>
-                                    <input type="text" class="add-input" id="airline-name" name="airline-name"
-                                        placeholder="British Airways">
+                                    <div class="error-message" style="width: 300px;">
+                                        <input type="text" class="add-input" id="airline-name" name="airline-name"
+                                            placeholder="British Airways">
+                                        <span class="error">Airline name is required</span>
+                                    </div>
                                 </div>
                                 <div class="row mb-4">
                                     <label for="logo-images" class="add-label">Logo Images</label>
-                                    <div class="p-0" style="width: 300px;">
+                                    <div class="p-0 error-message" style="width: 300px;">
                                         <div class="teams-file-upload">
                                             <label for="logo-images" class="teams-file-upload-input">Logo Images</label>
                                             <input type="file" id="logo-images" name="logo-images"
@@ -151,6 +154,7 @@
                                         <div class="teams-file-info">Logo (500Kb) <span
                                                 class="remove-file">&#x2716;</span>
                                         </div>
+                                        <span class="error">Airline name is required</span>
                                     </div>
                                 </div>
                             </div>
@@ -158,16 +162,22 @@
 
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="departure" class="add-label">Departure</label>
-                                    <input type="text" class="add-input" id="departure" name="departure"
-                                        placeholder="San Fransisco">
+                                    <div class="error-message" style="width: 300px;">
+                                        <input type="text" class="add-input" id="departure" name="departure"
+                                            placeholder="San Fransisco">
+                                        <span class="error">Departure is required</span>
+                                    </div>
                                 </div>
                                 <div class="row align-items-center mb-4">
                                     <label for="departure-date-time" class="add-label">Departure Date & Time</label>
-                                    <input class="add-input" type="text" id="departure-date-time"
-                                        placeholder="March 22, 2022, 17.35 IST" onfocus="(this.type='datetime-local')"
-                                        onblur="(this.type='text')">
+                                    <div class="error-message" style="width: 300px;">
+                                        <input class="add-input" type="text" id="departure-date-time"
+                                            placeholder="March 22, 2022, 17.35 IST"
+                                            onfocus="(this.type='datetime-local')" onblur="(this.type='text')">
+                                        <span class="error">Departure date & time is required</span>
+                                    </div>
                                 </div>
                                 <div class="row align-items-center mb-4">
                                     <label for="transfers" class="add-label">Transfers</label>
@@ -176,15 +186,21 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="destination" class="add-label">Destination</label>
-                                    <input type="text" class="add-input" id="destination" name="destination"
-                                        placeholder="New Delhi">
+                                    <div class="error-message" style="width: 300px;">
+                                        <input type="text" class="add-input" id="destination" name="destination"
+                                            placeholder="New Delhi">
+                                        <span class="error">Destination is required</span>
+                                    </div>
                                 </div>
                                 <div class="row align-items-center mb-4">
                                     <label for="duration" class="add-label">Duration</label>
-                                    <input type="text" class="add-input" id="duration" name="duration"
-                                        placeholder="12 Hrs 20 Min">
+                                    <div class="error-message" style="width: 300px;">
+                                        <input type="text" class="add-input" id="duration" name="duration"
+                                            placeholder="12 Hrs 20 Min">
+                                        <span class="error">Duration is required</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -266,8 +282,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><input type="text" class="add-hotel-table-input"
-                                                placeholder="Economy"></td>
+                                        <td><input type="text" class="add-hotel-table-input" placeholder="Economy"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="Adult"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$100"></td>
@@ -310,8 +325,8 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><input type="text" class="add-hotel-table-input"
-                                                placeholder="Business"></td>
+                                        <td><input type="text" class="add-hotel-table-input" placeholder="Business">
+                                        </td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="Adult"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$100"></td>
@@ -340,15 +355,12 @@
                                 </tbody>
                             </table>
                         </div>
-
-
-
-                    </form>
-                </div>
-                <div style="float: right;" class="mt-2">
-                    <a href="#" class="btn cancel-btn">CANCEL</a>
-                    <a href="#" class="btn save-btn">SAVE</a>
-                </div>
+                    </div>
+                    <div style="float: right;" class="mt-2">
+                        <a href="#" class="btn cancel-btn">CANCEL</a>
+                        <a href="#" class="btn save-btn">SAVE</a>
+                    </div>
+                </form>
             </div>
         </section>
         <!-- End Content -->

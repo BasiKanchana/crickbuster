@@ -32,40 +32,40 @@
                 <h2>CRICKBUSTER</h2>
             </div>
             <ul class="sidebar-nav">
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Dashboard">
                     <a href="index.html"><i class="fa-brands fa-slack"></i>Dashboard</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Packages">
                     <a href="packages.html"><i class="fa-solid fa-bag-shopping"></i>Packages</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Tournaments">
                     <a href="tournaments.html"><i class="fa-solid fa-trophy"></i>Tournaments</a>
                 </li>
-                <li class="active">
+                <li class="active" data-toggle="tooltip" data-placement="right" title="Stadiums">
                     <a href="stadium.html"><i class="fa fa-user"></i>Stadiums</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Teams">
                     <a href="teams.html"><i class="fa fa-user"></i>Teams</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Hotels">
                     <a href="hotels.html"><i class="fa-solid fa-hotel"></i>Hotels</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Flights">
                     <a href="flights.html"><i class="fa-solid fa-plane-departure"></i>Flights</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Attractions">
                     <a href="attractions.html"><i class="fa fa-user"></i>Attractions</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Intra/Intercity">
                     <a href="intercity.html"><i class="fa-solid fa-bus"></i>Intra/Intercity</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Crickbuster Tours">
                     <a href="cricbuster-tour.html"><i class="fa fa-user"></i>Crickbuster Tours</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Landing Page">
                     <a href="landing-page.html"><i class="fa-solid fa-pager"></i>Landing Page</a>
                 </li>
-                <li>
+                <li data-toggle="tooltip" data-placement="right" title="Manage Content">
                     <a href="manage-content.html"><i class="fa-solid fa-gears"></i>Manage Content</a>
                 </li>
                 <!-- <div class='dashboard-nav-dropdown'>
@@ -128,81 +128,109 @@
                 </div>
             </div>
             <div class="banner-container">
+                <form action="">
                 <p class="banner-heading">Add Stadium</p>
                 <div class="banner-body">
-
-
-                    <div class="">
-
-                        <form>
-                            <div class="banner-section">
-                                <div class="d-flex justify-content-between">
-                                    <div class="row mb-4">
-                                        <div class="row align-items-center mb-3">
-                                            <label for="stadium name" class="banner-label">Stadium Name</label>
-                                            <input type="text" class="banner-input" id="stadium name" name="banner-name"
-                                                placeholder="Court Yard">
-                                        </div>
-                                        <div class="row align-items-center mb-3">
-                                            <label for="city" class="banner-label">City</label>
-                                            <input type="text" class="banner-input" id="city" name="banner-name"
-                                                placeholder="Near Airport">
-                                        </div>
-                                        <div class="row align-items-center mb-3">
-                                            <label for="country" class="banner-label">Country</label>
-                                            <input type="text" class="banner-input" id="country" name="banner-name"
-                                                placeholder="INDIA">
-                                        </div>
-                                        <div class="row align-items-center mb-3">
-                                            <label for="description" class="banner-label mb-5">Description</label>
-                                            <textarea type="text" class="banner-input" id="description"
-                                                name="banner-name" rows="4" placeholder=""></textarea>
-                                        </div>
+                    <div class="banner-section">
+                        <div class="d-flex justify-content-between">
+                            <div class="row mb-4">
+                                <div class="row align-items-center mb-3">
+                                    <label for="stadium name" class="banner-label">Stadium Name</label>
+                                    <div class="error-message" style="width:300px">
+                                        <input type="text" class="banner-input" id="stadium name" name="banner-name"
+                                            placeholder="Court Yard">
+                                        <span class="error">Enter Stadium name</span>
                                     </div>
-                                    <div class="row mb-4 ">
 
-                                        <label for="banner-logo" class="banner-label ">Seating map</label>
-                                        <div class="p-0 " style="width: 300px;">
-                                            <div class="banner-file-upload ">
-
-                                                <label for="banner-logo" class="banner-file-upload-input mt-3">Team
-                                                    Logo</label>
-                                                <input type="file" id="banner-logo" name="banner-logo"
-                                                    class="banner-file-upload-input">
-                                                <span class="banner-file-icon"><i
-                                                        class="fa-solid fa-arrow-up-from-bracket"></i></span>
-                                            </div>
-                                            <div class="banner-file-info">CSK.jpeg (500Kb) <span
-                                                    class="remove-file">&#x2716;</span>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-
-                                <div>
-                                    <p class="ms-1 mt-5 mb-5 banner-label">Cordinates</p>
-                                    <div class="row align-items-center mb-3">
-                                        <label for="latitude" class="banner-label">Latitude</label>
-                                        <input type="number" class="banner-input" id="latitude" name="banner-name"
-                                            placeholder="152'545">
-                                    </div>
-                                    <div class="row align-items-center mb-3">
-                                        <label for="longitude" class="banner-label">Longitude</label>
-                                        <input type="number" class="banner-input" id="longitude" name="banner-name"
-                                            placeholder="152'545">
+                                <div class="row align-items-center mb-3">
+                                    <label for="city" class="banner-label">City</label>
+                                    <div class="error-message" style="width:300px">
+                                        <input type="text" class="banner-input" id="city" name="banner-name"
+                                            placeholder="Near Airport">
+                                        <span class="error">Enter Stadium name</span>
                                     </div>
 
+                                </div>
+                                <div class="row align-items-center mb-3">
+                                    <label for="country" class="banner-label">Country</label>
+                                    <div class="error-message" style="width:300px">
+                                        <input type="text" class="banner-input" id="country" name="banner-name"
+                                            placeholder="INDIA">
+                                        <span class="error">Contry name is required</span>
+                                    </div>
+
+                                </div>
+                                <div class="row align-items-center mb-3">
+                                    <label for="description" class="banner-label mb-5">Description</label>
+                                    <div class="error-message" style="width:300px">
+                                        <textarea type="text" class="banner-input" id="description" name="banner-name"
+                                            rows="4" placeholder=""></textarea>
+                                        <span class="error">type description min 20 to max 50</span>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="row mb-4 ">
 
-                        </form>
+                                <label for="banner-logo" class="banner-label mb-3">Seating map</label>
+                                <div class="p-0 error-message" style="width: 300px;">
+                                    <div class="banner-file-upload ">
+                                        <label for="banner-logo" class="banner-file-upload-input mt-3">Team
+                                            Logo</label>
+                                        <input type="file" id="banner-logo" name="banner-logo"
+                                            class="banner-file-upload-input">
+                                        <span class="banner-file-icon"><i
+                                                class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                                    </div>
+                                    <div class="banner-file-info">CSK.jpeg (500Kb) <span
+                                            class="remove-file">&#x2716;</span>
+                                    </div>
+                                    <span class="error">Upload required image</span>
+                                </div>
+
+                                <div class="row mb-4 ">
+
+                                    <p class="p-0 mt-3">Eg:</p>
+                                    <div class="p-0 " style="width: 300px;">
+
+                                        <iframe
+                                            src="https://momento360.com/e/u/ff5a36f34199435c88fce6b231a57f14?utm_campaign=embed&utm_source=other&heading=229.33&pitch=27.62&field-of-view=75&size=medium&display-plan=true"
+                                            frameborder="0" width="300px" height="200px"></iframe>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="ms-1 mt-5 mb-5 banner-label">Cordinates</p>
+                                <div class="row align-items-center mb-3">
+                                    <label for="latitude" class="banner-label">Latitude</label>
+                                    <div class="error-message" style="width:300px">
+                                        <input type="number" class="banner-input" id="latitude" name="banner-name"
+                                            placeholder="152'545">
+                                        <span class="error">Select required Latitude</span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-3">
+                                    <label for="longitude" class="banner-label">Longitude</label>
+                                    <div class="error-message" style="width:300px">
+                                        <input type="number" class="banner-input" id="longitude" name="banner-name"
+                                            placeholder="152'545">
+                                        <span class="error">Select required Longitude</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
                 <div style="float: right;">
                     <a href="#" class="btn cancel-btn">CANCEL</a>
                     <a href="#" class="btn save-btn">SAVE</a>
                 </div>
+                </form>
             </div>
         </section>
         <!-- End Content -->
