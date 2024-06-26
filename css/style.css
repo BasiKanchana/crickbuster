@@ -173,12 +173,12 @@ td {
 .sidebar-nav > li > a:hover,
 .sidebar-nav > li.active > a {
   text-decoration: none;
-  color: #742cdf;
-  background: #fff;
+  color: white;
+  background: #56328bea;
   font-weight: 700;
 }
 .sidebar-nav > li > a i {
-  font-size: 24px;
+  font-size: 18px;
   width: 40px;
 }
 .sidebar-nav > .dashboard-nav-dropdown > a i {
@@ -1680,12 +1680,38 @@ tbody td img {
   height: auto;
 }
 
+
 .team-table-body td a i {
+  width: 30px;
+  height: 30px;
+ 
+  border-radius:5px  ;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 13px;
   margin: 0 5px;
-  color: #5c5e62;
+  color:#742cdf;
+  background-color: #e1d5f1;
+  text-align: center;
+  justify-content: center;
+  padding-top: 8px;
+
 }
+.team-table-body td a i:hover {
+  width: 30px;
+  height: 30px;
+ 
+  border-radius:5px  ;
+  cursor: pointer;
+  font-size: 13px;
+  margin: 0 5px;
+  color:white;
+  background-color: #742cdf;
+  text-align: center;
+  justify-content: center;
+  padding-top: 8px;
+
+}
+
 
 .transport-column {
   width: 15%;
@@ -2181,4 +2207,85 @@ color: red;
 .logout-button > a{
 text-decoration: none !important;
 
+}
+.edit-file-icon{
+  color: #742cdf !important;
+  /* background-color: #aa7af1 !important; */
+}
+/* Start Profile details */
+.avatar.avatar-sm {
+  width: 1.75rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  font-size: 0.65rem;
+}
+.avatar.avatar-rounded {
+  border-radius: 50%;
+}
+.avatar {
+  position: relative;
+  height: 2.625rem;
+  width: 2.625rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.main-header-dropdown {
+  border: 1px #eaeaea solid !important;
+  border: 50px;
+}
+
+.main-header-container .main-header-dropdown {
+  box-shadow: 0px 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+  inset-block-start: 0.875rem !important;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.header-profile-dropdown {
+  min-width: 11rem !important;
+}
+
+.profile-icon {
+  border-bottom: 1px #f3f3f3 solid;
+  margin-bottom: 5px;
+}
+
+.profile-icon:hover,
+.profile-icon:hover a {
+  color: #dc1f26 !important;
+}
+
+.main-header-dropdown li a .text-secondary {
+  color: rgb(215, 124, 247) !important;
+}
+
+.main-header-dropdown li a .text-success {
+  color: rgb(12, 215, 177) !important;
+  opacity: 1;
+}
+
+
+/* End profile details */
+
+.mini-logo{
+  display: none;
+}
+.toggled .mini-logo{
+  display: block !important;
+  width: 40px;
+  margin: 25px 10px; 
+  padding: 0; 
+  transition: ease-out;
+  transition-duration: 0.5s;
 }
