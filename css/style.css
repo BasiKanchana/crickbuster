@@ -463,12 +463,14 @@ td {
   border-radius: 0;
 }
 .nav-pills .nav-link {
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 500;
   background-color: white;
 }
 .nav-pills .nav-link.active {
   background-color: #742cdf !important;
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 500;
 }
 .add-new-button {
   font-size: 12px !important;

@@ -542,13 +542,15 @@
                     data: [300, 400, 200, 300, 500, 600, 400, 500, 400],
                     borderColor: 'red',
                     backgroundColor: 'red',
-                    fill: false
+                    fill: false,
+                    tension: 0.4 // Adjust tension for curved lines
                 }, {
                     label: 'Package',
                     data: [400, 300, 500, 400, 300, 200, 300, 400, 500],
                     borderColor: 'green',
                     backgroundColor: 'green',
-                    fill: false
+                    fill: false,
+                    tension: 0.4 // Adjust tension for curved lines
                 }]
             },
             options: {
@@ -556,7 +558,31 @@
                     y: {
                         beginAtZero: true,
                         min: 100,
-                        max: 600
+                        max: 600,
+                        title: {
+                            display: true,
+                            text: 'Sales'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 12 // Decrease legend label font size
+                            },
+                            boxWidth: 10, // Decrease the width of the legend color box
+                            boxHeight: 10 // Decrease the height of the legend color box
+
+                        }
                     }
                 }
             }
