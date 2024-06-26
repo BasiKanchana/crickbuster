@@ -1981,6 +1981,18 @@ tbody td img {
   background-color: #742cdf;
   text-decoration: none !important;
 }
+.package-modelbox-add-btn{
+  color: #fefeff !important;
+  border: 2px solid #742cdf !important;
+  border-radius: 0 !important;
+  width: 50px !important;
+  margin-right: 15px !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  padding: 7px;
+  background-color: #742cdf;
+  text-decoration: none !important;
+}
 /* Start add packages, tournament, stadium */
 
 .tournament-level-data {
