@@ -1684,7 +1684,6 @@ tbody td img {
 .team-table-body td a i {
   width: 30px;
   height: 30px;
- 
   border-radius:5px  ;
   cursor: pointer;
   font-size: 13px;
@@ -1699,7 +1698,6 @@ tbody td img {
 .team-table-body td a i:hover {
   width: 30px;
   height: 30px;
- 
   border-radius:5px  ;
   cursor: pointer;
   font-size: 13px;
@@ -1711,7 +1709,33 @@ tbody td img {
   padding-top: 8px;
 
 }
+.action-btn {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius:5px  ;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 0 5px;
+  color:#742cdf;
+  background-color: #e1d5f1;
+  text-align: center;
+  justify-content: center;
+  padding: 8px;
+}
+.action-btn:hover{
+ width: 30px !important;
+  height: 30px !important;
+  border-radius:5px  ;
+  cursor: pointer;
+   font-size: 15px;
+  margin: 0 5px;
+  color:white;
+  background-color: #742cdf;
+  text-align: center;
+  justify-content: center;
+  padding-top: 8px;
 
+}
 
 .transport-column {
   width: 15%;
