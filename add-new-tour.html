@@ -64,7 +64,7 @@
                 <li data-toggle="tooltip" data-placement="right" title="Intra/Intercity">
                     <a href="intercity.html"><i class="bi bi-bus-front"></i>Intra/Intercity</a>
                 </li>
-                <li  class="active" data-toggle="tooltip" data-placement="right" title="Crickbuster Tours">
+                <li class="active" data-toggle="tooltip" data-placement="right" title="Crickbuster Tours">
                     <a href="cricbuster-tour.html"><i class="bi bi-person"></i>Crickbuster Tours</a>
                 </li>
                 <li data-toggle="tooltip" data-placement="right" title="Landing Page">
@@ -109,7 +109,7 @@
                     </div>
                     <div class="py-2">
                         <span class="mt-5">
-                            <button type="button" class="position-relative  border border-0 bg-none"
+                            <button type="button" class="position-relative  border border-0 bg-none  me-4"
                                 style="background-color: transparent;">
                                 <span class="fs-4 notification-icon" style="color:#742CDF ;background-color: none;"> <i
                                         class="fa-solid fa-bell"></i></span>
@@ -117,8 +117,33 @@
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">0
                                     <span class="visually-hidden">unread messages</span></span>
                             </button>
-                            <img src="images/profile1.jpg" class="border border-secondary profile-image mx-5"
-                                alt="profile">
+                            <div class="btn-group">
+                                <a href="javascript:void(0);" class="header-link" id="mainHeaderProfile"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-xl-2"> <img src="images/profile-2.jpg" alt="img"
+                                                class="avatar avatar-sm avatar-rounded">
+                                        </div>
+                                        <div class="d-xl-block d-none lh-1"> <span class="fw-medium lh-1 fs-6">Mr.
+                                                John</span> </div>
+                                    </div>
+                                </a>
+                                <ul class="main-header-dropdown dropdown-menu mt-3 overflow-hidden header-profile-dropdown dropdown-menu-end ms-5"
+                                    aria-labelledby="mainHeaderProfile">
+                                    <li class="profile-icon mt-2 mb-2 "><a
+                                            class="dropdown-item d-flex align-items-center mb-2" href="#">
+                                            <i class="fa-regular fa-user me-2 fs-6 text-primary "></i>Profile</a>
+                                    </li>
+                                    <li class="profile-icon mt-2 mb-2"><a
+                                            class="dropdown-item d-flex align-items-center mb-2" href="#">
+                                            <i class="fa-solid fa-headset me-2 fs-6 text-secondary"></i>Support</a>
+                                    </li>
+                                    <li class="profile-icon mt-2  border-bottom border-0"><a
+                                            class="dropdown-item d-flex align-items-center " href="login-page.html">
+                                            <i class="fa-solid fa-right-from-bracket me-2 fs-6 text-success"></i>Log
+                                            Out</a></li>
+                                </ul>
+                            </div>
                         </span>
                     </div>
                 </div>
