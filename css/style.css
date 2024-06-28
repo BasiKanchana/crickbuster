@@ -2454,10 +2454,10 @@ text-decoration: none !important;
             background-color: #742cdf !important;
             color: white;
         }
-        .active {
+         .sales-tabs.active {
             background-color: #742cdf !important;
             color: white;
-        }
+        } 
 
         .legend {
           width:100%;
