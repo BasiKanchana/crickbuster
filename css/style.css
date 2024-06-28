@@ -752,8 +752,8 @@ table.table-data-scrollbar .tournament-table-body {
 
 /* Style the checkmark/indicator */
 .checkbox-container .checkmark:after {
-  left: 8px;
-  top: 4px;
+  left: 7px;
+  top: 3px;
   width: 5px;
   height: 10px;
   font-weight: 25px !important;
@@ -922,8 +922,8 @@ thead th {
 }
 
 .team-table-body tbody td {
-  padding: 0 15px;
-  text-align: left;
+  /* padding: 0 15px; */
+  /* text-align: left; */
 }
 
 .team-table-body tbody td img {
@@ -1106,12 +1106,12 @@ thead th {
 }
 .hotel-action-column {
   width: 13%;
-}
+}*/
 
 .hotel-rating-column i {
   font-size: 13px;
   color: #742cdf;
-} */
+} 
 .hotel-facilities-icons {
   font-size: 23px;
   width: 30px;
@@ -2147,7 +2147,7 @@ tbody td img {
 }
 .table-header,
 .table-data-elements td {
-  padding: 8px 12px;
+  padding: 20px 12px !important;
   text-align: left;
   font-weight: 500 !important;
 }
